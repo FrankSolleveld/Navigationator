@@ -7,6 +7,7 @@ class AboutViews {
     private init() {}
     
     let personalScreen = UIHostingController(rootView: AboutView())
+    let colleagueScreen = UIHostingController(rootView: AboutColleagueView())
 }
 
 class AboutViewsRouter: Router {

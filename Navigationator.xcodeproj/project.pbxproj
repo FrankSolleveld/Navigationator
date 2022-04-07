@@ -8,16 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		954D440527FED735006F381B /* NavigationatorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954D43F527FED734006F381B /* NavigationatorApp.swift */; };
-		954D440627FED735006F381B /* NavigationatorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954D43F527FED734006F381B /* NavigationatorApp.swift */; };
 		954D440727FED735006F381B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954D43F627FED734006F381B /* ContentView.swift */; };
-		954D440827FED735006F381B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954D43F627FED734006F381B /* ContentView.swift */; };
 		954D440927FED735006F381B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 954D43F727FED735006F381B /* Assets.xcassets */; };
-		954D440A27FED735006F381B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 954D43F727FED735006F381B /* Assets.xcassets */; };
 		954D441527FED7A0006F381B /* NavigationControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954D441427FED7A0006F381B /* NavigationControllers.swift */; };
 		954D441727FED7C6006F381B /* RootNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954D441627FED7C6006F381B /* RootNavigationController.swift */; };
 		954D441927FED7DA006F381B /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954D441827FED7DA006F381B /* Router.swift */; };
 		954D441C27FED7F6006F381B /* AboutNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954D441B27FED7F6006F381B /* AboutNavigation.swift */; };
 		954D441E27FED863006F381B /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954D441D27FED863006F381B /* AboutView.swift */; };
+		954D442527FEE150006F381B /* AboutColleagueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954D442427FEE150006F381B /* AboutColleagueView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,24 +23,16 @@
 		954D43F627FED734006F381B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		954D43F727FED735006F381B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		954D43FC27FED735006F381B /* Navigationator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Navigationator.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		954D440227FED735006F381B /* Navigationator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Navigationator.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		954D440427FED735006F381B /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		954D441427FED7A0006F381B /* NavigationControllers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationControllers.swift; sourceTree = "<group>"; };
 		954D441627FED7C6006F381B /* RootNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootNavigationController.swift; sourceTree = "<group>"; };
 		954D441827FED7DA006F381B /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		954D441B27FED7F6006F381B /* AboutNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutNavigation.swift; sourceTree = "<group>"; };
 		954D441D27FED863006F381B /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		954D442427FEE150006F381B /* AboutColleagueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutColleagueView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		954D43F927FED735006F381B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		954D43FF27FED735006F381B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -56,7 +46,6 @@
 			isa = PBXGroup;
 			children = (
 				954D43F427FED734006F381B /* Shared */,
-				954D440327FED735006F381B /* macOS */,
 				954D43FD27FED735006F381B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -77,17 +66,8 @@
 			isa = PBXGroup;
 			children = (
 				954D43FC27FED735006F381B /* Navigationator.app */,
-				954D440227FED735006F381B /* Navigationator.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		954D440327FED735006F381B /* macOS */ = {
-			isa = PBXGroup;
-			children = (
-				954D440427FED735006F381B /* macOS.entitlements */,
-			);
-			path = macOS;
 			sourceTree = "<group>";
 		};
 		954D441327FED790006F381B /* Navigation */ = {
@@ -105,6 +85,7 @@
 			children = (
 				954D441B27FED7F6006F381B /* AboutNavigation.swift */,
 				954D441D27FED863006F381B /* AboutView.swift */,
+				954D442427FEE150006F381B /* AboutColleagueView.swift */,
 			);
 			path = About;
 			sourceTree = "<group>";
@@ -129,23 +110,6 @@
 			productReference = 954D43FC27FED735006F381B /* Navigationator.app */;
 			productType = "com.apple.product-type.application";
 		};
-		954D440127FED735006F381B /* Navigationator (macOS) */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 954D441027FED735006F381B /* Build configuration list for PBXNativeTarget "Navigationator (macOS)" */;
-			buildPhases = (
-				954D43FE27FED735006F381B /* Sources */,
-				954D43FF27FED735006F381B /* Frameworks */,
-				954D440027FED735006F381B /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Navigationator (macOS)";
-			productName = "Navigationator (macOS)";
-			productReference = 954D440227FED735006F381B /* Navigationator.app */;
-			productType = "com.apple.product-type.application";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -157,9 +121,6 @@
 				LastUpgradeCheck = 1330;
 				TargetAttributes = {
 					954D43FB27FED735006F381B = {
-						CreatedOnToolsVersion = 13.3;
-					};
-					954D440127FED735006F381B = {
 						CreatedOnToolsVersion = 13.3;
 					};
 				};
@@ -178,7 +139,6 @@
 			projectRoot = "";
 			targets = (
 				954D43FB27FED735006F381B /* Navigationator (iOS) */,
-				954D440127FED735006F381B /* Navigationator (macOS) */,
 			);
 		};
 /* End PBXProject section */
@@ -192,14 +152,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		954D440027FED735006F381B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				954D440A27FED735006F381B /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -209,20 +161,12 @@
 			files = (
 				954D440727FED735006F381B /* ContentView.swift in Sources */,
 				954D441E27FED863006F381B /* AboutView.swift in Sources */,
+				954D442527FEE150006F381B /* AboutColleagueView.swift in Sources */,
 				954D441C27FED7F6006F381B /* AboutNavigation.swift in Sources */,
 				954D441727FED7C6006F381B /* RootNavigationController.swift in Sources */,
 				954D441927FED7DA006F381B /* Router.swift in Sources */,
 				954D441527FED7A0006F381B /* NavigationControllers.swift in Sources */,
 				954D440527FED735006F381B /* NavigationatorApp.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		954D43FE27FED735006F381B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				954D440827FED735006F381B /* ContentView.swift in Sources */,
-				954D440627FED735006F381B /* NavigationatorApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,62 +343,6 @@
 			};
 			name = Release;
 		};
-		954D441127FED735006F381B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 8S8EJS2M66;
-				ENABLE_HARDENED_RUNTIME = YES;
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 12.3;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.Navigationator;
-				PRODUCT_NAME = Navigationator;
-				SDKROOT = macosx;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-			};
-			name = Debug;
-		};
-		954D441227FED735006F381B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 8S8EJS2M66;
-				ENABLE_HARDENED_RUNTIME = YES;
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 12.3;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.Navigationator;
-				PRODUCT_NAME = Navigationator;
-				SDKROOT = macosx;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -472,15 +360,6 @@
 			buildConfigurations = (
 				954D440E27FED735006F381B /* Debug */,
 				954D440F27FED735006F381B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		954D441027FED735006F381B /* Build configuration list for PBXNativeTarget "Navigationator (macOS)" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				954D441127FED735006F381B /* Debug */,
-				954D441227FED735006F381B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

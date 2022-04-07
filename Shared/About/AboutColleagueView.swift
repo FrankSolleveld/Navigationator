@@ -1,5 +1,5 @@
 //
-//  AboutView.swift
+//  AboutColleagueView.swift
 //  Navigationator (iOS)
 //
 //  Created by Frank Solleveld on 07/04/2022.
@@ -7,22 +7,32 @@
 
 import SwiftUI
 
-struct AboutView: View {
+struct AboutColleagueView: View {
   @EnvironmentObject var router: AboutViewsRouter
     var body: some View {
       ZStack {
-        Color.black
+        Color.yellow
           .ignoresSafeArea()
         VStack {
-          Text("Frank Solleveld")
+          Text("John van de Water")
             .foregroundColor(.white)
             .padding(.bottom, 15)
           Button(
             action: {
-              router.pushTo(view: AboutViews.shared.colleagueScreen)
+              router.popTo(view: AboutViews.shared.personalScreen)
             },
             label: {
-              Text("Continue to John")
+              Text("Back to Personal")
+                .bold()
+                .foregroundColor(.blue)
+            }
+          )
+          Button(
+            action: {
+              router.popToRoot()
+            },
+            label: {
+              Text("Back to Root")
                 .bold()
                 .foregroundColor(.blue)
             }
@@ -32,8 +42,8 @@ struct AboutView: View {
     }
 }
 
-struct AboutView_Previews: PreviewProvider {
+struct AboutColleagueView_Previews: PreviewProvider {
     static var previews: some View {
-        AboutView()
+        AboutColleagueView()
     }
 }
