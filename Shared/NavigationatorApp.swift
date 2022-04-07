@@ -9,9 +9,20 @@ import SwiftUI
 
 @main
 struct NavigationatorApp: App {
+
+  let nav = NavigationControllers()
+  let router = AboutViewsRouter()
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+          RootNavigationController(
+            nav: nav.aboutNavigationController,
+            rootView: ContentView()
+          )
+          .environmentObject(router)
+          .onAppear {
+            router.nav = nav.aboutNavigationController
+          }
         }
     }
 }

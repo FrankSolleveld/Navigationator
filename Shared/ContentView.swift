@@ -8,9 +8,20 @@
 import SwiftUI
 
 struct ContentView: View {
+  @EnvironmentObject var router: AboutViewsRouter
     var body: some View {
-        Text("Hello, world!")
+      VStack {
+        Text("Root About View")
             .padding()
+        Button(
+          action: {
+            router.pushTo(view: AboutViews.shared.personalScreen)
+          },
+          label: {
+            Text("About Me")
+          }
+        )
+      }
     }
 }
 

@@ -13,6 +13,11 @@
 		954D440827FED735006F381B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954D43F627FED734006F381B /* ContentView.swift */; };
 		954D440927FED735006F381B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 954D43F727FED735006F381B /* Assets.xcassets */; };
 		954D440A27FED735006F381B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 954D43F727FED735006F381B /* Assets.xcassets */; };
+		954D441527FED7A0006F381B /* NavigationControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954D441427FED7A0006F381B /* NavigationControllers.swift */; };
+		954D441727FED7C6006F381B /* RootNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954D441627FED7C6006F381B /* RootNavigationController.swift */; };
+		954D441927FED7DA006F381B /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954D441827FED7DA006F381B /* Router.swift */; };
+		954D441C27FED7F6006F381B /* AboutNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954D441B27FED7F6006F381B /* AboutNavigation.swift */; };
+		954D441E27FED863006F381B /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954D441D27FED863006F381B /* AboutView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		954D43FC27FED735006F381B /* Navigationator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Navigationator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		954D440227FED735006F381B /* Navigationator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Navigationator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		954D440427FED735006F381B /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		954D441427FED7A0006F381B /* NavigationControllers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationControllers.swift; sourceTree = "<group>"; };
+		954D441627FED7C6006F381B /* RootNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootNavigationController.swift; sourceTree = "<group>"; };
+		954D441827FED7DA006F381B /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		954D441B27FED7F6006F381B /* AboutNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutNavigation.swift; sourceTree = "<group>"; };
+		954D441D27FED863006F381B /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +64,8 @@
 		954D43F427FED734006F381B /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				954D441A27FED7E6006F381B /* About */,
+				954D441327FED790006F381B /* Navigation */,
 				954D43F527FED734006F381B /* NavigationatorApp.swift */,
 				954D43F627FED734006F381B /* ContentView.swift */,
 				954D43F727FED735006F381B /* Assets.xcassets */,
@@ -76,6 +88,25 @@
 				954D440427FED735006F381B /* macOS.entitlements */,
 			);
 			path = macOS;
+			sourceTree = "<group>";
+		};
+		954D441327FED790006F381B /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				954D441627FED7C6006F381B /* RootNavigationController.swift */,
+				954D441427FED7A0006F381B /* NavigationControllers.swift */,
+				954D441827FED7DA006F381B /* Router.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		954D441A27FED7E6006F381B /* About */ = {
+			isa = PBXGroup;
+			children = (
+				954D441B27FED7F6006F381B /* AboutNavigation.swift */,
+				954D441D27FED863006F381B /* AboutView.swift */,
+			);
+			path = About;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,6 +208,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				954D440727FED735006F381B /* ContentView.swift in Sources */,
+				954D441E27FED863006F381B /* AboutView.swift in Sources */,
+				954D441C27FED7F6006F381B /* AboutNavigation.swift in Sources */,
+				954D441727FED7C6006F381B /* RootNavigationController.swift in Sources */,
+				954D441927FED7DA006F381B /* Router.swift in Sources */,
+				954D441527FED7A0006F381B /* NavigationControllers.swift in Sources */,
 				954D440527FED735006F381B /* NavigationatorApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
